@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 440;
+  font-style: normal;
+  text-align: start;
+  font-size: 9px;
+}
+.paymentwindow {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a2534;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #fbfbfb;
+  height: 300px;
+  align-items: center;
+  flex-direction: column;
+  width: 30rem;
+  border-radius: 30px;
+  box-shadow: rgb(196, 195, 195) 2px 2px 10px;
+}
+
+.expirecontainer {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+#cardnumber {
+  background-color: white;
+  border: solid grey;
+  border-width: 1px;
+  width: 20rem;
+  height: 25px;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+#cardnumber:active {
+  border: solid blue;
+  width: 20rem;
+  height: 25px;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+#cardholder {
+  border: solid grey;
+  border-width: 1px;
+  width: 20rem;
+  height: 25px;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+#cardholder:active {
+  border: solid blue;
+  width: 20rem;
+  height: 25px;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+#expiration {
+  border: solid grey;
+  border-width: 1px;
+  width: 8rem;
+  height: 25px;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+#expiration:active {
+  border: solid blue;
+  width: 8rem;
+  height: 25px;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+#CVC {
+  border: solid grey;
+  border-width: 1px;
+  width: 8rem;
+  height: 25px;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+#CVC:active {
+  border: solid blue;
+  width: 8rem;
+  height: 25px;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.cardsholder {
+  margin-top: 20px;
+  padding: 5px;
+}
+
+button {
+  margin-top: 30px;
+  width: 20rem;
+  height: 25px;
+  border: solid grey;
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: #2261cf;
+  color: white;
+  cursor: pointer;
+  transition: 403ms;
+}
+
+button:hover {
+  margin-top: 30px;
+  width: 20rem;
+  height: 25px;
+  border: solid grey;
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: #3075eb;
+  color: white;
+  cursor: pointer;
+}
+
+/* mediaquerys of a display related or smaller than 391px */
+@media (max-width: 391px) {
+  .container {
+    width: 22rem;
+  }
+}

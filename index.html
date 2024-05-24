@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Payment Window</title>
+  </head>
+  <body>
+    <div class="paymentwindow">
+      <div class="container">
+        <div class="cardnumberinput">
+          <p>Card Number</p>
+
+          <input
+            type="number"
+            id="cardnumber"
+            name="tentacles"
+            min="16"
+            max="16"
+            placeholder="123 456 789 10 12 13 14"
+          />
+        </div>
+        <div class="cardholderinput">
+          <div class="cardsholder">
+            <p>Card holder</p>
+
+            <input
+              type="text"
+              id="cardholder"
+              name="name"
+              required
+              minlength="4"
+              maxlength="100"
+            />
+          </div>
+        </div>
+
+        <div class="expirecontainer">
+          <div class="experationdateinputs">
+            <p>Expiration date</p>
+
+            <input
+              type="month"
+              id="expiration"
+              name="start"
+              min="2018-03"
+              value="2018-05"
+            />
+          </div>
+          <div class="cvcinput">
+            <p>CVC</p>
+            <input type="number" id="CVC" name="tentacles" min="3" max="3" />
+          </div>
+        </div>
+        <button>Submit</button>
+      </div>
+    </div>
+  </body>
+</html>
